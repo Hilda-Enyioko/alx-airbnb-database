@@ -147,13 +147,5 @@ Use **Draw.io** (or any ERD tool) to visualize:
 
 ---
 
-## ✅ Deliverables
-- **ER Diagram File:** Created using Draw.io  
-- **Saved Location:** `ERD/airbnb_erd.png`  
-- **Documentation:** `ERD/requirements.md` (this file)  
-- **Repository:** [alx-airbnb-database](https://github.com/<your-username>/alx-airbnb-database)
-
----
-
 **Author:** *Hilda*  
 **Project:** ALX Airbnb Database – ER Diagram
