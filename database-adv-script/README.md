@@ -10,7 +10,7 @@ This project is a part of the ALX Airbnb Database Module, where you will impleme
 - **Monitor and Refine Performance:** Continuously monitor database health and refine schemas and queries for optimal performance.
 - **Think Like a DBA:** Learn to make data-driven decisions about schema design and optimization strategies for high-volume applications.
 
---
+---
 
 ## Task 0: Write Complex Queries with Joins
 
@@ -32,3 +32,14 @@ This project is a part of the ALX Airbnb Database Module, where you will impleme
 
 - Write a query to find all properties where the average rating is greater than 4.0 using a subquery.
 - Write a correlated subquery to find users who have made more than 3 bookings.
+
+---
+
+## Task 2: Apply Aggregations and Window Functions
+
+**Objective:** Use SQL aggregation and window functions to analyze data.
+
+**Instructions:**
+
+- Write a query to find the total number of bookings made by each user, using the COUNT function and GROUP BY clause.
+- Use a window function (ROW_NUMBER, RANK) to rank properties based on the total number of bookings they have received.
