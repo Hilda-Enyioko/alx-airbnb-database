@@ -23,3 +23,18 @@ INNER JOIN (
 ) AS property_book_count
 ON property_book_count.property_id = p.property_id
 ORDER BY booking_rank;
+
+-- OR
+
+SELECT p.property_id, p.name, p.host_id, p.location, property_book_count.total_bookings,
+ROW_NUMBER() OVER (
+    ORDER BY property_book_count.total_bookings DESC, p.property_id ASC
+) AS booking_rank
+FROM property as p
+INNER JOIN (
+    SELECT property_id, COUNT(booking_id) as total_bookings
+    FROM booking
+    GROUP BY property_id
+) AS property_book_count
+ON property_book_count.property_id = p.property_id
+ORDER BY booking_rank;
