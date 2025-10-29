@@ -43,3 +43,13 @@ This project is a part of the ALX Airbnb Database Module, where you will impleme
 
 - Write a query to find the total number of bookings made by each user, using the COUNT function and GROUP BY clause.
 - Use a window function (ROW_NUMBER, RANK) to rank properties based on the total number of bookings they have received.
+
+## Task 3: Implement Indexes for Optimization
+
+**Objective:** Identify and create indexes to improve query performance.
+
+**Instructions:**
+
+- Identify high-usage columns in your User, Booking, and Property tables (e.g., columns used in WHERE, JOIN, ORDER BY clauses).
+- Write SQL CREATE INDEX commands to create appropriate indexes for those columns and save them on database_index.sql
+- Measure the query performance before and after adding indexes using EXPLAIN or ANALYZE.
