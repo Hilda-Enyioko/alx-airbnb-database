@@ -18,11 +18,6 @@ CREATE INDEX idx_booking_startdate ON booking (start_date);
 CREATE INDEX idx_booking_status ON booking (status);
 
 -- Use case explaining index query performance
-EXPLAIN
-SELECT * FROM user
-WHERE email = "johndoe@example.com";
-
--- OR
-ANALYZE
+EXPLAIN ANALYZE
 SELECT * FROM user
 WHERE email = "johndoe@example.com";
