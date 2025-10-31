@@ -16,3 +16,8 @@ CREATE INDEX idx_booking_propertyid ON booking (property_id);
 CREATE INDEX idx_booking_userid ON booking (user_id);
 CREATE INDEX idx_booking_startdate ON booking (start_date);
 CREATE INDEX idx_booking_status ON booking (status);
+
+-- Use case explaining index query performance
+EXPLAIN
+SELECT * FROM user
+WHERE email = "johndoe@example.com";
