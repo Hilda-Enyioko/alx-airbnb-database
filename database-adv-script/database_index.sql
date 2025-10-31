@@ -21,3 +21,8 @@ CREATE INDEX idx_booking_status ON booking (status);
 EXPLAIN
 SELECT * FROM user
 WHERE email = "johndoe@example.com";
+
+-- OR
+ANALYZE
+SELECT * FROM user
+WHERE email = "johndoe@example.com";
